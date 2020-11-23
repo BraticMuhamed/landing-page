@@ -1,0 +1,34 @@
+.eventItemWrapper {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+
+  > div {
+    padding: 25px 24px;
+
+    h1 {
+      margin: 0;
+      font-family: Merriweather;
+      font-size: 24px;
+      line-height: 32px;
+      color: #eeb17e;
+      margin-bottom: 11px;
+    }
+
+    span {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 16px;
+      color: #3b3028;
+    }
+
+    p {
+      margin: 24px 0 0 0;
+      white-space: pre-line;
+    }
+  }
+}
+
+.reverse {
+  flex-direction: column-reverse;
+}

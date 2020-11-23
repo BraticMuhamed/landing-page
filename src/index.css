@@ -1,0 +1,21 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather&#8217);
+
+body {
+  background-color: #f8f3eb;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+  font-weight: 400;
+}
+
+button {
+  cursor: pointer;
+}
+
+:root {
+  --color-orange: #eeb17e;
+  --color-light-gray: #76716a;
+  --color-dark: #3b3028;
+  --color-darker: #2e2923;
+  --color-faded-black: rgba(0, 0, 0, 0.48);
+}

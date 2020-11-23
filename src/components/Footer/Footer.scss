@@ -1,0 +1,104 @@
+@import '../../LandingPage/LandingPage.scss';
+
+@mixin contactText {
+  font-family: Merriweather;
+  font-size: 20px;
+  line-height: 32px;
+  color: var(--color-dark);
+}
+
+.footerWrapper {
+  margin: 152px 403px 41px 403px;
+
+  .contactWrapper {
+    display: grid;
+    grid-template-columns: 1.7fr 1.7fr 1fr;
+    column-gap: 105px;
+    margin-bottom: 80px;
+
+    .titleText {
+      @include aboveTitleText;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+
+    .pText {
+      @include paragraph;
+      font-size: 14px;
+      margin-bottom: 48px;
+    }
+
+    .textWrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .mapWrapper {
+      height: 194px;
+    }
+
+    .email {
+      @include contactText;
+      margin-bottom: 64px;
+    }
+
+    .number {
+      @include contactText;
+      margin-bottom: 56px;
+      display: flex;
+      align-items: center;
+
+      svg {
+        margin-right: 16px;
+      }
+    }
+
+    .logos {
+      svg {
+        width: 24px;
+        height: 24px;
+        margin-right: 24px;
+      }
+    }
+
+    .workingHours {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      row-gap: 32px;
+
+      .workingHoursItem {
+        display: flex;
+        flex-direction: column;
+
+        .day {
+          @include aboveTitleText;
+          font-family: Merriweather;
+        }
+
+        .hour {
+          font-weight: bold;
+          font-size: 15px;
+          line-height: 17px;
+          color: var(--color-darker);
+        }
+      }
+    }
+  }
+
+  .end {
+    display: flex;
+    align-items: center;
+
+    span {
+      font-size: 13px;
+      line-height: 15px;
+      color: #76716a;
+      opacity: 0.8;
+      margin-right: 226px;
+    }
+
+    :nth-child(2) {
+      margin-right: 428px;
+    }
+  }
+}

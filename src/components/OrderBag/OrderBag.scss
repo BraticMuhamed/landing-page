@@ -1,0 +1,80 @@
+.orderBagWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0fr;
+  background-color: rgba(247, 231, 214, 0.6);
+  position: relative;
+  padding: 30px 0;
+  border-bottom: 11px solid #eeb17e;
+
+  .orderBagTitle {
+    margin: 34px 0 0 81px;
+
+    .tomatoes {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .carrots {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    h1 {
+      margin: 0;
+      padding: 0;
+      font-family: Merriweather;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 64px;
+      color: #eeb17e;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 24px;
+      color: rgba(0, 0, 0, 0.64);
+      margin: 23px 0 36px 0;
+    }
+
+    button {
+      background-color: #eeb17e;
+      border: 0;
+      padding: 23px 24px 23px 32px;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 18px;
+      color: #2e2923;
+
+      svg {
+        margin-left: 106px;
+      }
+    }
+  }
+
+  .bagListWrapper {
+    padding-top: 64px;
+    margin-left: 100px;
+
+    span {
+      font-size: 12px;
+      line-height: 14px;
+      color: #2e2923;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 24px;
+      display: inline-block;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      margin-bottom: 17px;
+    }
+  }
+}

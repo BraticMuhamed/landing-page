@@ -1,0 +1,52 @@
+@import '../../LandingPage/LandingPage.scss';
+
+.aboutUsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .textLogo {
+    height: 56px;
+    width: 399px;
+    margin: 152px 0;
+  }
+
+  .aboutUsWrapper {
+    display: flex;
+    flex-direction: row;
+
+    .aboutUsPara {
+      display: flex;
+      flex-direction: column;
+      border-top: 1px solid #e1ddd6;
+      margin-left: 288px;
+      width: 459px;
+      padding-top: 32px;
+      margin-right: 80px;
+
+      .ourStory {
+        @include aboveTitleText;
+      }
+
+      .aboutUsText {
+        @include title;
+      }
+
+      .paragraphText {
+        @include paragraph;
+        margin-top: 32px;
+        margin-bottom: 0px;
+      }
+
+      .buttons {
+        width: 32px;
+        height: 32px;
+        border: 1px solid #e1ddd6;
+        box-sizing: border-box;
+        margin-right: 8px;
+        margin-top: 64px;
+      }
+    }
+  }
+}

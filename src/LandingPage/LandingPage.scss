@@ -1,0 +1,23 @@
+@mixin title {
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 64px;
+}
+
+@mixin paragraph {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--color-faded-black);
+}
+
+@mixin aboveTitleText {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--color-orange);
+  margin-bottom: 12px;
+}

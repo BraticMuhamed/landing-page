@@ -1,0 +1,15 @@
+.partnersWrapper {
+  margin: 104px 288px 195px 288px;
+
+  .partners {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 151px;
+    row-gap: 90px;
+
+    svg {
+      align-self: center;
+    }
+  }
+}

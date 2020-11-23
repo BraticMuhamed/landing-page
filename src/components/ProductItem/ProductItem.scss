@@ -1,0 +1,27 @@
+.productItemWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+
+  .title {
+    font-family: Merriweather;
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 24px;
+  }
+  .price {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 32px;
+    color: #efba8d;
+  }
+  .description {
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.48);
+  }
+}

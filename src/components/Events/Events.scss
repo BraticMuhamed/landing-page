@@ -1,0 +1,105 @@
+.eventsWrapper {
+  margin: 0 288px;
+
+  p {
+    font-size: 15px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.48);
+    margin-bottom: 72px;
+  }
+
+  .selectWrapper {
+    background-color: #eeb17e;
+    padding: 8px 20px;
+    position: relative;
+    width: 194px;
+    height: 52px;
+    margin-bottom: 88px;
+
+    :nth-child(1) {
+      border: 0;
+      background-color: #eeb17e;
+      color: #2e2923;
+
+      :nth-child(2) > span {
+        width: 0;
+      }
+    }
+  }
+
+  .eventItemsWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 35px;
+    row-gap: 32px;
+  }
+
+  .specialOpeningHoursWrapper {
+    display: flex;
+
+    .specialOpeningHoursItem {
+      display: flex;
+      flex-direction: column;
+      margin-right: 85px;
+
+      :nth-child(1) {
+        font-size: 14px;
+        line-height: 18px;
+        color: #d99c6a;
+        margin-bottom: 9px;
+      }
+
+      :nth-child(2) {
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 17px;
+        color: #2e2923;
+        margin-bottom: 9px;
+      }
+
+      :nth-child(3) {
+        font-size: 15px;
+        line-height: 17px;
+        color: #858585;
+      }
+    }
+  }
+
+  .specialEventContainer {
+    .specialEventHeader {
+      margin: 88px 0 25px 0;
+      font-family: Merriweather;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 64px;
+      color: #eeb17e;
+    }
+    .specialEventWrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 35px;
+    }
+  }
+
+  .instagramWrapper {
+    position: relative;
+    margin-top: 144px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    button {
+      border: 0;
+      background-color: #eeb17e;
+      position: absolute;
+      bottom: -20px;
+      left: 45%;
+      padding: 14px 24px;
+      border-radius: 26px;
+      display: flex;
+
+      svg {
+        padding-right: 12px;
+      }
+    }
+  }
+}

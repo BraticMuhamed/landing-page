@@ -1,0 +1,42 @@
+@import '../../LandingPage/LandingPage.scss';
+
+.welcomeWrapper {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 110px 288px;
+
+  .logoColor {
+    color: #f0ebe3;
+  }
+
+  .centerContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 147px;
+
+    :nth-child(1) {
+      @include aboveTitleText;
+    }
+
+    :nth-child(2) {
+      @include title;
+    }
+
+    :nth-child(3) {
+      @include paragraph;
+      margin: 23px 0 64px 0;
+    }
+
+    button {
+      width: 140px;
+      height: 44px;
+      border: 0;
+      background-color: var(--color-orange);
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}
