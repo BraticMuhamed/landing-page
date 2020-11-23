@@ -9,6 +9,7 @@
 
 .footerWrapper {
   margin: 152px 403px 41px 403px;
+  position: relative;
 
   .contactWrapper {
     display: grid;
@@ -100,5 +101,11 @@
     :nth-child(2) {
       margin-right: 428px;
     }
+  }
+
+  .windmill {
+    position: absolute;
+    bottom: 0;
+    right: -25rem;
   }
 }

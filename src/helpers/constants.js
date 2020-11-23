@@ -179,6 +179,7 @@ export const SpecialEvents = [
     date: 'April 12 14:00',
     description:
       'Et quidem exercitus quid ex ea quid est consecutus? laudem et fortibus viris commemorandis eorumque factis non possim accommodare torquatos nostros? quos dolores et fortibus viris commemorandis eorumque factis non existimant oportere exquisitis rationibus conquisitis de voluptate ponit, quod.\n\nQuid ex ea commodi consequatur? quis autem vel eum iure reprehenderit, qui blanditiis praesentium voluptatum adipiscendarum causa aut voluptates omittantur maiorum dolorum fuga et caritatem, quae ab.',
+    reverse: true,
   },
   {
     title: 'Event headline',

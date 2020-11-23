@@ -5,10 +5,6 @@ import Header from '../common/Header';
 import ProductItem from '../ProductItem';
 import OrderBag from '../OrderBag';
 
-import Product1 from '../../../public/images/Product1.jpg';
-import Product2 from '../../../public/images/Product2.jpg';
-import Product3 from '../../../public/images/Product3.jpg';
-import Product4 from '../../../public/images/Product4.jpg';
 import Bell from '../../../public/svgs/bell.svg';
 
 import styles from './Products.scss';
@@ -28,13 +24,13 @@ const Products = () => {
   const getProductImage = () => {
     switch (Math.floor(Math.random() * 4 + 1)) {
       case 1:
-        return Product1;
+        return `${process.env.PUBLIC_URL}/images/Product1.jpg`;
       case 2:
-        return Product2;
+        return `${process.env.PUBLIC_URL}/images/Product2.jpg`;
       case 3:
-        return Product3;
+        return `${process.env.PUBLIC_URL}/images/Product3.jpg`;
       default:
-        return Product4;
+        return `${process.env.PUBLIC_URL}/images/Product4.jpg`;
     }
   };
   const productItems = [...ProductItems, ...ProductItems].map((item) => ({

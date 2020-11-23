@@ -4,7 +4,6 @@ import MenuItem from '../MenuItem/MenuItem';
 
 import { MenuItems, Menus } from '../../helpers/constants';
 
-import MenuImage from '../../../public/svgs/menu-image.svg';
 import ArrowHeadRightOutline from '../../../public/svgs/arrowhead-right-outline.svg';
 
 import styles from './Menu.scss';
@@ -54,7 +53,11 @@ const Menu = () => {
           ))}
         </div>
       </div>
-      <MenuImage className={styles.backgroundImage} />
+      <img
+        src={`${process.env.PUBLIC_URL}/images/MenuImage.png`}
+        className={styles.backgroundImage}
+        alt=""
+      />
     </div>
   );
 };

@@ -1,18 +1,23 @@
 import React from 'react';
 import { arrayOf, string } from 'prop-types';
 
-import Bags from '../../../public/svgs/bags.svg';
 import ArrowPointerRight from '../../../public/svgs/arrow-pointer-right.svg';
-import Tomatoes from '../../../public/images/Tomatoes.png';
-import Carrots from '../../../public/images/Carrots.png';
 
 import styles from './OrderBag.scss';
 
 const OrderBag = ({ bagList }) => (
   <div className={styles.orderBagWrapper}>
     <div className={styles.orderBagTitle}>
-      <img className={styles.tomatoes} src={Tomatoes} alt="" />
-      <img className={styles.carrots} src={Carrots} alt="" />
+      <img
+        className={styles.tomatoes}
+        src={`${process.env.PUBLIC_URL}/images/Tomatoes.png`}
+        alt=""
+      />
+      <img
+        className={styles.carrots}
+        src={`${process.env.PUBLIC_URL}/images/Carrots.png`}
+        alt=""
+      />
       <h1>This weeks bag</h1>
       <p>
         Sunt autem quidam e nostris, qui studiose antiqua persequeris, claris et
@@ -31,7 +36,7 @@ const OrderBag = ({ bagList }) => (
         ))}
       </ul>
     </div>
-    <Bags />
+    <img src={`${process.env.PUBLIC_URL}/images/Bags.png`} alt="" />
   </div>
 );
 

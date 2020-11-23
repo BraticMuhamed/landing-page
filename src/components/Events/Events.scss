@@ -1,15 +1,17 @@
+@import '../../LandingPage/LandingPage.scss';
+
 .eventsWrapper {
   margin: 0 288px;
 
   p {
     font-size: 15px;
     line-height: 24px;
-    color: rgba(0, 0, 0, 0.48);
+    color: var(--color-faded-black);
     margin-bottom: 72px;
   }
 
   .selectWrapper {
-    background-color: #eeb17e;
+    background-color: var(--color-orange);
     padding: 8px 20px;
     position: relative;
     width: 194px;
@@ -18,8 +20,8 @@
 
     :nth-child(1) {
       border: 0;
-      background-color: #eeb17e;
-      color: #2e2923;
+      background-color: var(--color-orange);
+      color: var(--color-darker);
 
       :nth-child(2) > span {
         width: 0;
@@ -32,8 +34,12 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 35px;
     row-gap: 32px;
+    margin-bottom: 88px;
   }
 
+  .paragraphOpeningHours {
+    margin-bottom: 41px;
+  }
   .specialOpeningHoursWrapper {
     display: flex;
 
@@ -53,7 +59,7 @@
         font-weight: bold;
         font-size: 15px;
         line-height: 17px;
-        color: #2e2923;
+        color: var(--color-darker);
         margin-bottom: 9px;
       }
 
@@ -72,7 +78,7 @@
       font-weight: bold;
       font-size: 40px;
       line-height: 64px;
-      color: #eeb17e;
+      color: var(--color-orange);
     }
     .specialEventWrapper {
       display: grid;
@@ -89,7 +95,7 @@
 
     button {
       border: 0;
-      background-color: #eeb17e;
+      background-color: var(--color-orange);
       position: absolute;
       bottom: -20px;
       left: 45%;

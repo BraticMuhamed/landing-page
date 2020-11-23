@@ -36,7 +36,9 @@ const Events = () => {
       </div>
       <div>
         <h1>Special opening hours</h1>
-        <p>Primum igitur inquit sic agam ut de voluptate et quasi involuta</p>
+        <p className={styles.paragraphOpeningHours}>
+          Primum igitur inquit sic agam ut de voluptate et quasi involuta
+        </p>
         <div className={styles.specialOpeningHoursWrapper}>
           {SpecialOpeningHours.map((sEvent) => (
             <div className={styles.specialOpeningHoursItem}>
@@ -51,7 +53,7 @@ const Events = () => {
         <h1 className={styles.specialEventHeader}>Special events</h1>
         <div className={styles.specialEventWrapper}>
           {SpecialEvents.map((specialEvent) => (
-            <EventItem event={specialEvent} />
+            <EventItem event={specialEvent} isSpecialEvent />
           ))}
         </div>
       </div>

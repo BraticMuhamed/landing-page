@@ -1,14 +1,16 @@
 import React from 'react';
-import { string, objectOf } from 'prop-types';
+import { string, objectOf, bool } from 'prop-types';
 import cn from 'classnames';
 
 import styles from './EventItem.scss';
 
-const EventItem = ({ event }) => (
+const EventItem = ({ event, isSpecialEvent }) => (
   <div
     className={cn({
       [styles.eventItemWrapper]: true,
       [styles.reverse]: event.reverse,
+      [styles.special]: isSpecialEvent && !event.reverse,
+      [styles.specialReverse]: isSpecialEvent && event.reverse,
     })}
   >
     <img src={event.image} alt="" />
@@ -22,10 +24,12 @@ const EventItem = ({ event }) => (
 
 EventItem.propTypes = {
   event: objectOf(string),
+  isSpecialEvent: bool,
 };
 
 EventItem.defaultProps = {
   event: {},
+  isSpecialEvent: false,
 };
 
 export default EventItem;

@@ -6,7 +6,6 @@ import { WorkingHours } from '../../helpers/constants';
 import FacebookLogo from '../../../public/svgs/facebook-logo.svg';
 import InstagramLogo from '../../../public/svgs/instagram-big-logo.svg';
 import Keypad from '../../../public/svgs/keypad.svg';
-import CompanyLogo from '../../../public/svgs/company-logo-black.svg';
 import Badge from '../../../public/svgs/badge.svg';
 
 import styles from './Footer.scss';
@@ -68,9 +67,17 @@ const Footer = () => (
     </div>
     <div className={styles.end}>
       <span>© Bondens Västerås 2020 • All rights reserved.</span>
-      <CompanyLogo />
+      <img
+        src={`${process.env.PUBLIC_URL}/images/CompanyLogoBlack.png`}
+        alt=""
+      />
       <Badge />
     </div>
+    <img
+      className={styles.windmill}
+      src={`${process.env.PUBLIC_URL}/images/Windmill.png`}
+      alt=""
+    />
   </div>
 );
 

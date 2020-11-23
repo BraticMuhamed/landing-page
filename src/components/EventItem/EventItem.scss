@@ -1,3 +1,5 @@
+@import '../../LandingPage/LandingPage.scss';
+
 .eventItemWrapper {
   background-color: #ffffff;
   display: flex;
@@ -5,21 +7,20 @@
 
   > div {
     padding: 25px 24px;
+    height: 100%;
 
     h1 {
-      margin: 0;
-      font-family: Merriweather;
+      @include title;
+      margin: 0 0 11px 0;
       font-size: 24px;
       line-height: 32px;
-      color: #eeb17e;
-      margin-bottom: 11px;
     }
 
     span {
       font-weight: bold;
       font-size: 16px;
       line-height: 16px;
-      color: #3b3028;
+      color: var(--color-dark);
     }
 
     p {
@@ -27,6 +28,16 @@
       white-space: pre-line;
     }
   }
+}
+
+.special {
+  background-color: var(--color-orange);
+  border-bottom: 8px solid var(--color-dark-orange);
+}
+
+.specialReverse {
+  background-color: var(--color-orange);
+  border-top: 8px solid var(--color-dark-orange);
 }
 
 .reverse {
